@@ -1,0 +1,307 @@
+body {
+    background-image: url("../media/popular3.jpg"); 
+    background-size: cover;
+    display: flex;
+    transition: background-image 0s; 
+    margin:0;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+.header {
+    display: flex;
+    max-width: fit-content;
+    width: 100vw;
+}
+#LOGO {
+    font-size: clamp(1rem, 2vw, 2.5rem); 
+    color: rgb(0, 0, 0);
+    vertical-align: middle;
+    margin: 10pt;
+    text-decoration: none;
+    margin-bottom: 5pt;
+    
+}
+.upper-header {
+    min-width: 100pt;
+    position: absolute;
+    color: aliceblue;
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+    height: 6vh;
+    width: 12vw;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: ani-logo 2.5s;
+    border-radius: 0pt 0pt 10pt 10pt;
+}
+
+.navigation {
+    display: flex;
+    position: absolute;
+    right: 15%;
+    color: aliceblue;
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+    height: 6vh;
+    width: 49vw;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -6pt;
+    border-radius: 0pt 0pt 10pt 10pt;
+    animation: ani-nav 2.5s;
+}
+
+.nav_element:hover {
+    background: rgb(153, 255, 250);
+}
+
+.nav_element {
+    padding: 2pt 70pt 10pt 70pt;
+    background: rgb(255, 255, 255);
+    border-radius: 0pt 0pt 10pt 10pt;
+    font-size: 15pt;
+    color: rgb(0, 0, 0);
+    line-height: 45px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+#nav_element1 {
+    border-radius: 0pt 0pt 0pt 10pt;
+}
+
+#nav_element2 {
+    border-radius: 0pt 0pt 0pt 0pt;
+    width: 400pt;
+}
+
+#nav_element3 {
+    border-radius: 0pt 0pt 10pt 0pt;
+}
+#nav_element4{
+    margin-left: 30pt;
+    border: 1px solid rgb(0, 0, 0);
+}
+.controls {
+    margin-block-end: 20px;
+  }
+  
+  .button {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .button-radio {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    inline-size: 15px;
+    block-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+  }
+  
+  .button-radio + .button-radio {
+    margin-inline-start: 12px;
+  }
+  
+  .button-radio.active {
+    background-color: #C56FFF;
+    pointer-events: none;
+  }
+  
+  .button-radio:focus-visible {
+    outline: 3px solid white;
+    outline-offset: -1px;
+  }
+  
+  .button-prev,
+  .button-next {
+    position: absolute;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    border: none;
+    inline-size: 30px;
+    block-size: 40px;
+    background-color: transparent;
+    background-image: url("../media/arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5pt;
+  }
+  
+  .button-prev[aria-disabled="true"],
+  .button-next[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .button-prev {
+    height: 23pt;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-50%) rotateY(180deg);
+    transform-origin: center;
+    inset-inline-start: -50px;
+  }
+  
+  .button-next {
+      
+    height: 22pt;
+    background-color: rgb(255, 255, 255);
+    inset-inline-end: -50px;
+  }
+  
+  .slide-img {
+    display: block;
+    inline-size: 100%;
+    block-size: 400px;
+    max-block-size: 400px;
+    object-fit: cover;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-inline-size: 600px;
+    inline-size: 100%;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slides {
+    inline-size: 100%;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+  }
+  
+  .slide--active {
+    display: block;
+  }
+  footer {
+    position: absolute;
+    left: 50pt;
+    bottom:0;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    
+}
+
+.footer-container {
+    
+    z-index: 1;
+    width: 93vw;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-bottom: 10pt;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-links,
+.footer-social,
+.footer-subscribe {
+    width: 22%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-social h3,
+.footer-subscribe h3 {
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color:#fff;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.footer-social a:hover {
+    text-decoration: underline;
+}
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-subscribe button {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+}
+
+  @media (max-width: 768px) {
+    .slider {
+      max-inline-size: 260px;
+    }
+  
+    .slide-img {
+      block-size: 400px;
+    }
+  
+    .button-prev {
+      inset-inline-start: -40px;
+    }
+  
+    .button-next {
+      inset-inline-end: -40px;
+    }
+  }

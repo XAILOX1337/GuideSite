@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <title>ZITurrismo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="upper-header">
+            <a id="LOGO" href="main.html">ZITurrismo</a>
+        </div>
+        <nav class="navigation">
+            <a class="nav_element" id="nav_element1" href="turs.html" aria-label="Туры">Туры</a>
+            <a class="nav_element" id="nav_element2" href="popular.html" aria-label="Популярное">Достопримечательности</a>
+            <a class="nav_element" id="nav_element3" href="gallery.html" aria-label="Фотогалерея">Фотогалерея</a>
+            <a class="nav_element" id="nav_element4" href="login.html" aria-label="Вход">Вход</a>
+        </nav>
+    </header>
+    <div class="slider" role="region" aria-label="Паттерны">
+        <div class="controls" role="group" aria-label="Управление слайдами">
+    <button class="button button-radio" type="button" aria-current="true" aria-label="Показать 1 из 5"></button>
+    <button
+      class="button button-radio"
+      type="button"
+      aria-label="Показать 2 из 5"
+    >
+    </button>
+    <button
+      class="button button-radio"
+      type="button"
+      aria-label="Показать 3 из 5"
+    >
+    </button>
+    <button
+      class="button button-radio"
+      type="button"
+      aria-label="Показать 4 из 5"
+    >
+    </button>
+    <button
+      class="button button-radio"
+      type="button"
+      aria-label="Показать 5 из 5"
+    >
+    </button>
+    <button
+      aria-label="Предыдущий"
+      type="button"
+      class="button button-prev"
+    >
+    </button>
+    <button
+      aria-label="Следующий"
+      type="button"
+      class="button button-next"
+    >
+    </button>
+  </div>
+
+  <div class="slides" aria-live="polite">
+    <div
+    class="slide"
+    role="group"
+    aria-labelledby="item-1-label"
+    id="carousel-item-1"
+  >
+    <img
+      class="slide-img"
+      src="media/slide9.jpeg"
+    >
+    
+  </div>
+    <div
+      class="slide"
+      role="group"
+      aria-labelledby="item-1-label"
+      id="carousel-item-1"
+    >
+      <img
+        class="slide-img"
+        src="media/slide10.webp"
+      >
+    </div>
+    <div
+      class="slide"
+      role="group"
+      aria-labelledby="item-2-label"
+      id="carousel-item-2"
+    >
+      <img
+        class="slide-img"
+        src="media/slide7.jpg"
+        
+      >
+    </div>
+    <div
+      class="slide"
+      role="group"
+      aria-labelledby="item-3-label"
+      id="carousel-item-3"
+    >
+      <img
+        class="slide-img"
+        src="media/slide6.jpg"
+        
+      >
+    </div>
+    <div
+      class="slide"
+      role="group"
+      aria-labelledby="item-4-label"
+      id="carousel-item-4"
+    >
+      <img
+        class="slide-img"
+        src="media/slide8.webp"
+        
+      >
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Контактная информация</h3>
+            <p>Адрес: ул. Примерная, 123, Город, Страна</p>
+            <p>Телефон: +1 (234) 567-890</p>
+            <p>Email: info@tourguide.com</p>
+            <p>Часы работы: Пн-Пт 9:00-18:00</p>
+        </div>
+        
+        <div class="footer-links">
+            <h3>Навигация</h3>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#blog">Блог</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Мы в социальных сетях</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">VK</a>
+        </div>
+
+        <div class="footer-subscribe">
+            <h3>Подпишитесь на наши новости</h3>
+            <form>
+                <input type="email" placeholder="Введите ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Туристический Гид. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+<script src="JS/gallery.js"></script>
+</body>
+</html>
